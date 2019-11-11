@@ -10,14 +10,14 @@ declare interface Array<T> {
 
   $idx(n: number): number
   $at(n: number): T
-  $insertAt(idx: number): T[]
-  $removeAt(idx: number): T[]
+  $splice(startIdx: number, deleteCount?: number): T[]
+  $splice(startIdx: number, deleteCount: number, ...items: T[]): T[]
+  $insertAt(idx: number, ...items: T[]): T[]
+  $removeAt(idx: number, numItems?: number): T[]
   $shift(numItems?: number): T[]
   $pop(numItems?: number): T[]
   $push(...items: T[]): T[]
   $unshift(...items: T[]): T[]
-  $splice(startIdx: number, deleteCount?: number): T[]
-  $splice(startIdx: number, deleteCount: number, ...items: T[]): T[]
   $sort(sortFn?: (a: T, b: T) => number): T[]
 }
 

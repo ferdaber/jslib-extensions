@@ -1,8 +1,10 @@
 {
   "name": "jslib-extend",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
@@ -15,6 +17,7 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rm -rf lib && tsc && cp src/*.d.ts lib"
   }
 }

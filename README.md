@@ -1,3 +1,8 @@
+<p align="center">
+  <img alt="version" src="https://img.shields.io/npm/v/@ferdaber/jslib-extensions?label=version">
+  <img alt="package size" src="https://img.shields.io/bundlephobia/min/@ferdaber/jslib-extensions?label=size">
+</p>
+
 # What is this?
 
 This is a personal library used to extend the standard JS library with more prototype methods and getters. This is not intended to be used for serious projects as prototype method extensions of built-ins are normally frowned upon since they can collide with each other. To at least minimize collisions, all extension methods are prefixed with `$`.

@@ -17,6 +17,22 @@ import "@ferdaber/jslib-extensions"
 // Now new prototype methods will be available for arrays, objects, numbers, strings and sets.
 ```
 
+## Development
+
+This project uses Yarn as its package manager.
+
+### Setup
+
+```sh
+yarn install
+```
+
+### Testing
+
+```sh
+yarn test
+```
+
 ## Reference
 
 ### `Array`

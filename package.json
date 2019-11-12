@@ -19,6 +19,6 @@
   "scripts": {
     "test": "jest",
     "build": "rm -rf lib && tsc && cp src/*.d.ts lib",
-    "prepublishOnly": "build"
+    "prepublishOnly": "npm run build"
   }
 }
